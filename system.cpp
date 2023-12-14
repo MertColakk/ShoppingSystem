@@ -58,12 +58,11 @@ void userLogin(){
                 isLogined=false;
         }
 
-        loginFile.close();
-
         if(isLogined)
             std::cout<<"Welcome to NoTrendWay!"<<std::endl;
         else
             std::cout<<"Wrong username or password!"<<std::endl;
-            
+        
+        loginFile.close();  
     }
 }
