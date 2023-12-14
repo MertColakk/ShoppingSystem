@@ -20,4 +20,5 @@ public:
     void addToCart(product newProduct);
     void removeFromCart(std::string oldProductName);
     void listProducts();
+    void removeAllCart();
 };

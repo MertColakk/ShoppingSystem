@@ -33,5 +33,5 @@ public:
     std::string getName();
 
     //Others
-    void pay(cart userCart);
+    void payCart();
 };

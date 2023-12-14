@@ -25,3 +25,5 @@ void cart::removeFromCart(std::string oldProductName){
             if(it->getName()==oldProductName)
                it = productList.erase(it);
 }
+
+void cart::removeAllCart(){productList.clear();}
