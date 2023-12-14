@@ -17,7 +17,7 @@ void userRegister(){
     std::string username,password;
 
     registerFile.open("users.db",std::ios::out);
-    if(!registerFile){
+    if(registerFile){
         std::cout<<"Enter username: ";
         std::cin>>username;
 
@@ -25,6 +25,7 @@ void userRegister(){
         std::cin>>password;
 
         registerFile<<username<<"   "<<password;
+        registerFile.close();
     }
 }
 void userLogin(){
