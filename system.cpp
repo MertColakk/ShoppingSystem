@@ -23,7 +23,7 @@ void userRegister(){
     std::fstream registerFile;
     std::string username,password;
 
-    registerFile.open("users.txt",std::ios::app);
+    registerFile.open("users.db",std::ios::app);
     if(registerFile){
         std::cout<<"Enter username: ";
         std::cin>>username;
@@ -42,7 +42,7 @@ void userLogin(){
     std::string username,inputUsername,password,inputPassword;
     bool isLogined=false;
 
-    loginFile.open("users.txt",std::ios::in);
+    loginFile.open("users.db",std::ios::in);
     if(loginFile){
         std::cout<<"Enter username: ";
         std::cin>>inputUsername;
