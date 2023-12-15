@@ -3,11 +3,20 @@
 #include <fstream>
 //Menu Operations
 void printMainMenu(){
-
+    std::cout<<"Welcome to NoTrendWay!\n"
+    <<"1-Account Settings\n"
+    <<"2-Buy\n"
+    <<"3-Pay\n"
+    <<"4-Show my cart\n"
+    <<"Choice: "<<std::endl;
 }
 
 void printSettingsMenu(){
-
+    std::cout<<"Welcome to NoTrendWay!\n"
+    <<"1-Change Username\n"
+    <<"2-Change Password\n"
+    <<"4-Back\n"
+    <<"Choice: "<<std::endl;
 }
 
 void printRegisterLoginMenu(){

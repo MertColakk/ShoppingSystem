@@ -3,12 +3,11 @@
 #include "cart.hpp"
 
 //Setters
-void User::changeName(std::string newName){this->name=newName;}
 void User::changeUsername(std::string newUsername){this->username=newUsername;}
 void User::changePassword(std::string newPassword){this->password=newPassword;}
 
 //Getters
-std::string User::getName(){return this->name;}
+std::string User::getuserName(){return this->username;}
 
 //Others
 void User::payCart(){
